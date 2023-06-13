@@ -28,7 +28,10 @@ public class NewsPost {
     @Column(columnDefinition="TEXT")
     private String image_url;
 
-    private String pubDate;
+    @Column(columnDefinition="TEXT")
+    private String videoUrl;
+
+    private Object pubDate;
 
     public Long getId() {
         return id;
@@ -70,11 +73,19 @@ public class NewsPost {
         this.image_url = image_url;
     }
 
-    public String getPubDate() {
+    public String getVideoUrl() {
+        return videoUrl;
+    }
+
+    public void setVideoUrl(String videoUrl) {
+        this.videoUrl = videoUrl;
+    }
+
+    public Object getPubDate() {
         return pubDate;
     }
 
-    public void setPubDate(String pubDate) {
+    public void setPubDate(Object pubDate) {
         this.pubDate = pubDate;
     }
 }
