@@ -120,7 +120,6 @@ public class NewsController {
         }
     }
 
-
     @DeleteMapping("/news/delete/{id}")
     String deleteNews(@PathVariable Long id) throws PrintException {
         if (!newsRepo.existsById(id)) {

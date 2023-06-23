@@ -31,7 +31,7 @@ public class NewsPost {
     @Column(columnDefinition="TEXT")
     private String videoUrl;
 
-    private Object pubDate;
+    private String pubDate;
 
     public Long getId() {
         return id;
@@ -81,11 +81,11 @@ public class NewsPost {
         this.videoUrl = videoUrl;
     }
 
-    public Object getPubDate() {
+    public String getPubDate() {
         return pubDate;
     }
 
-    public void setPubDate(Object pubDate) {
+    public void setPubDate(String pubDate) {
         this.pubDate = pubDate;
     }
 }
